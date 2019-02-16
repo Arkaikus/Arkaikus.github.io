@@ -20,7 +20,6 @@
   <link rel="stylesheet" type="text/css" href="/adminlte2material/static/admin-lte/dist/css/skins/allskins.min.css">
   <link rel="stylesheet" type="text/css" href="/adminlte2material/static/icheck/skins/square/blue.css">
   <link rel="stylesheet" type="text/css" href="/adminlte2material/static/conflicts/conflicts.css">
-  <link rel="stylesheet" type="text/css" href="/adminlte2material/docs/style.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,7 +68,7 @@
         <li class="active"><a href="#introduction"><i class="fa fa-circle-o"></i>Introducción</a></li>
         <li><a href="#description"><i class="fa fa-circle-o"></i> Descripción</a></li>        
         <li class="active treeview menu-open">
-          <a href="#">
+          <a href="#templates">
             <i class="fa fa-circle-o"></i> Templates Principales
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -143,9 +142,13 @@
           <code class="language-bash" data-lang="bash">
               adminlte/
               ├── lib/
-              │   ├── 
-              │   ├── JS
-              │   ├── img
+              │   ├── _main_footer.html
+              │   ├── _main_header.html
+              │   ├── _main_sidebar.html
+              │   ├── _messages.html
+              │   ├── _pagination.html
+              │   ├── _scripts.html
+              │   ├── _styles.html
               ├── base.html
               ├── index.html
               ├── login.html
@@ -157,8 +160,8 @@
 
       <!-- ============================================================= -->
 
-      <section id="dependencies">
-        <h2 class="page-header"><a href="#dependencies">Templates Principales</a></h2>
+      <section id="templates">
+        <h2 class="page-header"><a href="#templates">Templates Principales</a></h2>
         <p class="lead"></p>        
       </section>
 
