@@ -6,15 +6,21 @@
   <title>AdminLTE 2 | Documentation</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="/adminlte2material/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/bootstrap/dist/css/bootstrap-material-design.min.css">
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/adminlte2material/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="/adminlte2material/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/adminlte2material/dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="/adminlte2material/dist/css/skins/allskins.min.css">
-  <link rel="stylesheet" href="/adminlte2material/docs/style.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/admin-lte/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/admin-lte/dist/css/ripples.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/admin-lte/dist/css/MaterialAdminLTE.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/admin-lte/dist/css/skins/allskins.min.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/icheck/skins/square/blue.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/static/conflicts/conflicts.css">
+  <link rel="stylesheet" type="text/css" href="/adminlte2material/docs/style.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -2168,13 +2174,16 @@
 </div><!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="/adminlte2material/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/adminlte2material/static/jquery/dist/jquery.min.js"></script>
+<script src="/adminlte2material/static/jquery/dist/jquery-ui.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="/adminlte2material/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- FastClick -->
-<script src="/adminlte2material/plugins/fastclick/fastclick.min.js"></script>
+<script src="/adminlte2material/static/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="/adminlte2material/dist/js/adminlte.min.js"></script>
+<script src="/adminlte2material/static/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="/adminlte2material/static/admin-lte/dist/js/app.min.js"></script>
+<script>
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
 <!-- SlimScroll -->
 <script src="/adminlte2material/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
