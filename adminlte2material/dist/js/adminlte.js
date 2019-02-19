@@ -7,7 +7,7 @@
 * @Author  Almsaeed Studio
 * @Support <https://www.almsaeedstudio.com>
 * @Email   <abdullah@almsaeedstudio.com>
-* @version 2.4.8
+* @version 2.4.2
 * @repository git://github.com/almasaeed2010/AdminLTE.git
 * @license MIT <http://opensource.org/licenses/MIT>
 */
@@ -54,7 +54,7 @@ throw new Error('AdminLTE requires jQuery')
   var BoxRefresh = function (element, options) {
     this.element  = element;
     this.options  = options;
-    this.$overlay = $(options.overlayTemplate);
+    this.$overlay = $(options.overlay);
 
     if (options.source === '') {
       throw new Error('Source url was not defined. Please specify a url in your BoxRefresh source option.');
@@ -70,7 +70,7 @@ throw new Error('AdminLTE requires jQuery')
 
     $.get(this.options.source, this.options.params, function (response) {
       if (this.options.loadInContent) {
-        $(this.element).find(this.options.content).html(response);
+        $(this.options.content).html(response);
       }
       this.options.onLoadDone.call($(this), response);
       this._removeOverlay();
@@ -80,7 +80,7 @@ throw new Error('AdminLTE requires jQuery')
   // Private
 
   BoxRefresh.prototype._setUpListeners = function () {
-    $(this.element).on('click', this.options.trigger, function (event) {
+    $(this.element).on('click', Selector.trigger, function (event) {
       if (event) event.preventDefault();
       this.load();
     }.bind(this));
@@ -91,7 +91,7 @@ throw new Error('AdminLTE requires jQuery')
   };
 
   BoxRefresh.prototype._removeOverlay = function () {
-    $(this.$overlay).remove();
+    $(this.element).remove(this.$overlay);
   };
 
   // Plugin Definition
@@ -601,9 +601,8 @@ throw new Error('AdminLTE requires jQuery')
     $(Selector.layoutBoxed + ' > ' + Selector.wrapper).css('overflow', 'hidden');
 
     // Get window height and the wrapper height
-    var footerHeight = $(Selector.mainFooter).outerHeight() || 0;
-    var headerHeight  = $(Selector.mainHeader).outerHeight() || 0;
-    var neg           = headerHeight + footerHeight;
+    var footerHeight  = $(Selector.mainFooter).outerHeight() || 0;
+    var neg           = $(Selector.mainHeader).outerHeight() + footerHeight;
     var windowHeight  = $(window).height();
     var sidebarHeight = $(Selector.sidebar).height() || 0;
 
@@ -614,7 +613,7 @@ throw new Error('AdminLTE requires jQuery')
     } else {
       var postSetHeight;
 
-      if (windowHeight >= sidebarHeight + headerHeight) {
+      if (windowHeight >= sidebarHeight) {
         $(Selector.contentWrapper).css('min-height', windowHeight - neg);
         postSetHeight = windowHeight - neg;
       } else {
@@ -1075,16 +1074,16 @@ throw new Error('AdminLTE requires jQuery')
   Tree.prototype.collapse = function (tree, parentLi) {
     var collapsedEvent = $.Event(Event.collapsed);
 
-    //tree.find(Selector.open).removeClass(ClassName.open);
+    tree.find(Selector.open).removeClass(ClassName.open);
     parentLi.removeClass(ClassName.open);
     tree.slideUp(this.options.animationSpeed, function () {
-      //tree.find(Selector.open + ' > ' + Selector.treeview).slideUp();
+      tree.find(Selector.open + ' > ' + Selector.treeview).slideUp();
       $(this.element).trigger(collapsedEvent);
     }.bind(this));
   };
 
   // Private
-
+  
   Tree.prototype._setUpListeners = function () {
     var that = this;
 
