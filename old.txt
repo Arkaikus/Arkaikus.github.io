@@ -65,3 +65,41 @@
 <a class="btn btn-outline-light btn-social mx-1" href="#">
     <i class="fab fa-fw fa-twitter"></i>
 </a>
+
+
+<form id="contactForm" name="sentMessage" novalidate="novalidate">
+						<div class="control-group">
+							<div class="form-group floating-label-form-group controls mb-0 pb-2">
+								<label>Nombre</label>
+                                <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" 
+                                    data-validation-required-message="Por favor ingrese su Nombre." />
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="form-group floating-label-form-group controls mb-0 pb-2">
+								<label>Correo Electrónico</label>
+                                <input class="form-control" id="email" type="email" placeholder="Correo Electrónico" required="required" 
+                                    data-validation-required-message="Por favor ingrese su Correo Electrónico." 
+                                    data-validator-validemail-message="No es una dirección de Correo Electrónico valida" />
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="form-group floating-label-form-group controls mb-0 pb-2">
+								<label>Número de Contacto</label><input class="form-control" id="phone" type="tel" placeholder="Número de Contacto" required="required" data-validation-required-message="Por favor ingrese su Número de Contacto." />
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="form-group floating-label-form-group controls mb-0 pb-2">
+								<label>Mensaje</label><textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese un Mensaje."></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<br />
+						<div id="success"></div>
+						<div class="form-group">
+							<button class="btn btn-primary btn-block btn-xl" id="sendMessageButton" type="submit">Enviar</button>
+						</div>
+					</form>
