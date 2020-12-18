@@ -111,6 +111,6 @@ actividades académicas:
 * * *
 
 #### [EF SET English Certificate 72/100 (C2 Proficient)](https://www.efset.org/cert/pWdvMy)
-**EF Standard English Test (EF SET)**
-**Noviembre 2020**
+**EF Standard English Test ([EF SET](https://www.linkedin.com/company/efset/))**  
+**Noviembre 2020 - No Vence**
  
