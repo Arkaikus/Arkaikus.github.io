@@ -113,6 +113,7 @@ a {
 }
 
 .page-header {
+  position: relative;
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
@@ -130,6 +131,19 @@ a {
     padding: 2rem 1rem;
   }
 }
+
+//.page-header::before{
+//  content: "";
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%!important;
+//  height: 100%!important;
+//  z-index: -1!important;
+//  //background: url("/assets/images/header.jpg") center;
+//  background-color: $header-bg-color;
+//  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+//}
 
 .project-name {
   margin-top: 0;
@@ -382,4 +396,15 @@ a {
 
 .site-footer-credits {
   color: $blockquote-text-color;
+}
+
+.btn-circle {
+  width: 64px!important;
+  height: 64px!important;
+  padding: 6px 0px!important;
+  border-radius: 35px!important;
+  text-align: center!important;
+  font-size: 12px!important;
+  line-height: 1.42857!important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;;
 }
