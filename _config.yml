@@ -3,8 +3,12 @@ description: Ingeniero de Sistemas, Universidad del Valle, Colombia
 profession: Ingeniero de Sistemas
 university: Universidad del Valle, Colombia
 linkedin: https://www.linkedin.com/in/santiagogiraldoalegria/
-profile_picture: /assets/images/profile.jpg
+logo: /assets/images/profile.jpg
+image: /assets/images/profile.jpg
 lang: es-ES
+twitter:
+  username: Arkaikus_
+  card: summary
 plugins:
   - jekyll-seo-tag
   - html-proofer
