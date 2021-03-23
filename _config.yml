@@ -1,6 +1,10 @@
 title: Santiago Giraldo Alegría
-description: Ingeniero de Sistemas
-show_downloads: false
+description: Ingeniero de Sistemas, Universidad del Valle, Colombia
+profession: Ingeniero de Sistemas
+university: Universidad del Valle, Colombia
+linkedin: https://www.linkedin.com/in/santiagogiraldoalegria/
+profile_picture: /assets/images/profile.jpg
+lang: es-ES
 plugins:
   - jekyll-seo-tag
   - html-proofer
