@@ -1,19 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "es-ES" }}">
 <head>
 
-  {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-  {% endif %}
   <meta charset="UTF-8">
-
-
   {% seo %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#157878">
@@ -22,16 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <style>
-    .btn-circle {
-      width: 64px!important;
-      height: 64px!important;
-      padding: 6px 0px!important;
-      border-radius: 35px!important;
-      text-align: center!important;
-      font-size: 12px!important;
-      line-height: 1.42857!important;
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;;
-    }
+
   </style>
 </head>
 <body>
@@ -65,13 +45,11 @@
   <div class="row justify-content-center pt-5">
     <div class="col-12 col-md-12 col-lg-10 col-xl-8">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <img src="images/profile3.png" class="img-fluid rounded" style="height: 13rem!important;"/>
-          </div>
-          <div class="col-12 col-md-8">
-            <h1 class="mt-2 mt-md-5 h1">Santiago Giraldo Alegría</h1>
-            <h5 class="h5">Ingeniero de Sistemas</h5>
+        <div class="d-flex flex-row flex-wrap justify-content-center justify-content-sm-around">
+          <img src="/assets/images/profile.jpg" class="img-fluid rounded" style="height: 13rem!important"/>
+          <div class="d-flex flex-column justify-content-center">
+            <h1 class="h1 mt-4">Santiago Giraldo Alegría</h1>
+            <h5 class="h5 mt-2">Ingeniero de Sistemas</h5>
             <h5 class="h5">Universidad del Valle, Colombia</h5>
             <a href="https://www.linkedin.com/in/santiagogiraldoalegria/" class="btn text-white">
               <i class="fa fa-linkedin"></i>

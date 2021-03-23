@@ -1,5 +1,8 @@
 title: Santiago Giraldo Alegría
 description: Ingeniero de Sistemas
 show_downloads: false
-google_analytics:
-theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - html-proofer
+  - rubocop
+  - w3c_validators
