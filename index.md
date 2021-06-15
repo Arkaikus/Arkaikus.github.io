@@ -6,58 +6,71 @@ title: CV
 ## Sobre Mi
 * * *
 
-Soy Ingeniero de Sistemas de Cali, Colombia enfocado en 
+Soy Ingeniero de Sistemas graduado de la Universidad del Valle y actualmente enfocado en terminar la maestría en la misma alma máter
+
+Cuento con experiencia en:
 
 - Desarrollo de Software y Aplicaciones Web
-- Bases de Datos SQL y NoSQL
-- Despliegue de aplicaciones web con Docker
-- Aprendizaje de Máquina
+  - Tecnologías Front-end: Html, Css, Bootstrap, Javascript, Typescript, jQuery, React
+  - Tecnologías Back-end: Django, Docker, Nginx
+  - Arquitectura de Microservicios y REST API
+  - Lenguajes: Python, C/C++, Java, Php, Ruby
+  - Bases de Datos SQL y NoSQL
+  - PostgreSQL, MariaDB
+  - MongoDB, CouchDB
 
-Dentro del proceso de desarrollo de software estoy en capacidad de
+Dentro del proceso de desarrollo de software estoy en capacidad de 
 - Implementar prácticas ágiles
-- Especificar requerimientos
-- Planificar, seguir y apoyar el proceso de desarrollo
+- Especificar requerimientos 
+- Planificar y seguir el proceso de desarrollo
+- Despliegue e infraestructurra con herramientas de virtualización (Docker)
 
-Me encuentro en capacidad de adaptarme en el ambiente de trabajo y a los procesos existentes; 
-aprender fácilmente sobre nuevas tecnologías, lenguajes, y frameworks; reforzar el conocimiento 
-que poseo de forma autónoma; buscar fomentar el trabajo en equipo, y ser diligente. 
-
+Me encuentro en capacidad de adaptarme en el ambiente de trabajo y a los procesos existentes; aprender nuevas tecnologías, lenguajes, y frameworks; reforzar el conocimiento que poseo de forma autónoma; buscar fomentar el trabajo en equipo, y ser diligente.
 
 ### Aptitudes
 * * *
 
-**Lenguajes de programación**
+#### Lenguajes de Programación
 - Python (Avanzado)
 - Php (Intermedio)
 - C++ (Intermedio)
 - Java (Intermedio)
 
-**Desarrollo web**
+#### Desarrollo Web
+##### Frontend 
 - Html
 - Css
 - Bootstrap
 - Javascript (Intermedio-Avanzado)
-    - jQuery (Intermedio-Avanzado)
-    - Typescript (Básico)
-    - React (Básico)
-    - PouchDB (Básico)
-    
+  - jQuery (Intermedio-Avanzado)
+  - Typescript (Básico-Intermedio)
+  - React (Básico-Intermedio)
+  - PouchDB (Básico)
+
+##### Backend
 - Django (Intermedio-Avanzado)
-    - Django Rest Framework (Intermedio)
+- Django Rest Framework (Intermedio)
 - Flask (Básico-Intermedio)
 
-**Versionamiento**
+#### Versionamiento
 - Git (Intermedio)
-    - Gitkraken
-    - Github, Bitbucket
+  - Gitkraken
+  - Github
+  - Bitbucket
 
-**Herramientas**
+#### Virtualización
 - Docker (Intermedio)
-    - Docker Compose (Intermedio)
-
+- Docker Compose (Intermedio)
+- LXD (Básico)
 
 ### Experiencia
 * * *
+
+#### Tutor Especifico
+**Universidad Tecnológica de Pereira**
+**Mayo 2021 - Diciembre 2021**
+
+Tutor especifico en el programa gubernamental colombiano Misión TIC 2022 en convenio con la Universidad Tecnológica de Pereira, apoyando y acompañando de manera profesional la formación académica en fundamentos de programación
 
 #### Desarrollador Web Python
 **Universidad del Valle**  
